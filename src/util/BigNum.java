@@ -70,7 +70,7 @@
 			return _exponent;
 		}
 		
-		public String to_string() {
+		public String toString() {
 			double mantissa;
 			int exponant;
 			
@@ -113,42 +113,34 @@
 		// Operators
 		public BigNum add(BigNum val) {
 			set(_num_value + val.get_value());
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;	
 		}
 		public BigNum add(double val) {
 			set(_num_value + val);
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 		public BigNum sub(BigNum val) {
 			set(_num_value - val.get_value());
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 		public BigNum sub(double val) {
 			set(_num_value - val);
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 		public BigNum multiply(double val) {
 			set(_num_value * val);
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 		public BigNum multiply(int val) {
 			set(_num_value * val);
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 		public BigNum divide(double val) {
 			set(_num_value / val);
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 		public BigNum divide(int val) {
 			set(_num_value / val);
-			BigNum sum = new BigNum(_num_value);
-			return sum;	
+			return this;
 		}
 	}
