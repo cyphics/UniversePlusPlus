@@ -135,12 +135,20 @@
 			set(_num_value * val);
 			return this;
 		}
+		public BigNum multiply(BigNum val) {
+			set(_num_value * val.get_value());
+			return this;
+		}
 		public BigNum divide(double val) {
 			set(_num_value / val);
 			return this;
 		}
 		public BigNum divide(int val) {
 			set(_num_value / val);
+			return this;
+		}
+		public BigNum divide(BigNum val) {
+			set(_num_value / val.get_value());
 			return this;
 		}
 	}
