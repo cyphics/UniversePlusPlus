@@ -6,7 +6,7 @@ public class PhysicalUnit {
 	protected BigNum _num_value;
 	
 	public PhysicalUnit(BigNum num) {
-		
+		_num_value = num;
 	}
 	
 	public BigNum num() {
