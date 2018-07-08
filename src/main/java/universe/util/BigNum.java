@@ -151,4 +151,21 @@
 			set(_num_value / val.get_value());
 			return this;
 		}
+		public boolean isEqual(BigNum val) {
+			return _num_value == val.get_value();
+		}
+		public boolean isBigger(BigNum val) {
+			return _num_value > val.get_value();
+		}
+		public boolean isBiggerOrEqual(BigNum val) {
+			return isBigger(val) || isEqual(val);
+		}
+		public boolean isSmallerOrEqual(BigNum val) {
+			return !isBigger(val); 
+		}
+		public boolean isSmaller(BigNum val) {
+			return !isBiggerOrEqual(val);
+		}
+		
+		
 	}
